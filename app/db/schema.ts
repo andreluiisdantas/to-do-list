@@ -1,5 +1,6 @@
 import { integer, pgTable, varchar, text, timestamp, boolean} from "drizzle-orm/pg-core";
 
+// User Table
 export const userTable = pgTable("user", {
     id: integer().primaryKey().generatedAlwaysAsIdentity(),
     name: varchar({length: 255}).notNull(),
@@ -8,6 +9,7 @@ export const userTable = pgTable("user", {
     created_at: timestamp().notNull()
 })
 
+// Task Table
 export const taskTable = pgTable("task", {
     id: integer().primaryKey().generatedAlwaysAsIdentity(),
     title: varchar({length: 255}).notNull(),
