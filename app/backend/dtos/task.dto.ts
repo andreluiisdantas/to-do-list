@@ -2,7 +2,8 @@
 export interface createTaskDTO{
     title: string,
     description: string,
-    user_id: number
+    completed: boolean,
+    user_id: number,
 }
 
 // Update DTO
