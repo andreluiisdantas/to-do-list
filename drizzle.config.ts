@@ -3,7 +3,7 @@ import { defineConfig } from 'drizzle-kit'
 export default defineConfig({
     out: "./drizzle",
     dialect: "postgresql",
-    schema: "./app/db/schema.ts",
+    schema: "./app/backend/db/schema.ts",
     
     dbCredentials: {
         url: "postgres://postgres:root@localhost:5432/to_do_list"
