@@ -35,8 +35,6 @@ export async function createUser(data: createUserDTO): Promise<responseUserDTO[]
     return result
 }
 
-// Data types
-
 // UPDATE User
 export async function updateUser(id: number, updateUser: updateUserDTO): Promise<responseUserDTO[]>{
     const result = await db
