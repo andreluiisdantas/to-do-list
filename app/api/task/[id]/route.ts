@@ -6,7 +6,7 @@ interface RouteParams{
 }
 
 // GET BY ID
-export async function GET(request: NextRequest, {params}: RouteParams) {
+export async function GET({params}: RouteParams) {
     try{
         const id = Number(params.id);
         const task = await listTaskController(id);

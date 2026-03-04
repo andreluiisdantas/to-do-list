@@ -7,6 +7,7 @@ export async function GET() {
         const tasks = await listTasksController();
         return NextResponse.json(tasks)
     }catch(error){
+        console.error("DETALHE DO ERRO 500:", error);
         return NextResponse.json({error: "Erro ao encontrar a tarefa"}, {status: 500});
     }
 }
