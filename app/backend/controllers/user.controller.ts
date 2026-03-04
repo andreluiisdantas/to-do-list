@@ -19,7 +19,7 @@ export async function listUsersController() {
 
 
 // GET BY ID
-export async function getUserController(id: number) {
+export async function listUserController(id: number) {
 
     return await userService.listUserService(id);
 

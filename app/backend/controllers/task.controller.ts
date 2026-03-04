@@ -19,7 +19,7 @@ export async function listTasksController() {
 
 
 // GET BY ID
-export async function getTaskController(id: number) {
+export async function listTaskController(id: number) {
 
     return await taskService.listTaskService(id);
 
